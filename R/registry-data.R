@@ -466,10 +466,10 @@ setGeneric('dims', package='Biobase')
 #' 
 #' @rdname GEDdata-access
 #' @export
-setMethod('dims', 'GEDdata_entry', 
-		function(object){
-			object$dim
-		})
+# setMethod('dims', 'GEDdata_entry', 
+#		function(object){
+#			object$dim
+#		})
 
 setGeneric('basis', package='NMF')
 #' \code{basis} access/compute the signatures and mixture Proportions.
