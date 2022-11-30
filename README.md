@@ -10,18 +10,9 @@ Its main objectives are to provide:
 
 ## Installation
 ```R
-# install biocLite if not already there
-if( !require(BiocInstaller) ){
-	# enable Bioconductor repositories
-	# -> add Bioc-software
-	setRepositories() 
+install_github('randel/cellmix')
 
-	install.packages('BiocInstaller')
-	library(BiocInstaller)
-}
-# or alternatively do: 
-# source('http://www.bioconductor.org/biocLite.R')
-
-# install (NB: this might ask you to update some of your packages)
-biocLite('CellMix', siteRepos = 'http://web.cbio.uct.ac.za/~renaud/CRAN', type='both')
+# install/load dependencies, e.g.,
+library(digest)
+library(matrixStats)
 ```
