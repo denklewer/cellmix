@@ -101,7 +101,7 @@ setClass('MarkerList', contains='namedList',
 				if( length(ipb) > 0L ){
 					return(str_c("Element(s) [",.pbdesc(ipb),"] have no names: lists of non integer elements must have named elements."))
 				}
-			}else if( !all(has.names || !lelmt) && !all(!has.names) ) # all elements or none should be named
+			}else if( !all(has.names | !lelmt) && !all(!has.names) ) # all elements or none should be named
 				return("Invalid list of non-valued elements: all elements or none of them must have names.")
 			
 			# check for duplicated in names
